@@ -7,7 +7,8 @@
 
 ## Orga
 
-* ptheoretische Aufgabe 1 kommt am 27.05
+* theoretische Aufgabe 1 kommt am 27.05
+* praktiche Aufgabe 2 zum 15.05
 
 ## Kurze Einführung in Task2
 - Interrupts

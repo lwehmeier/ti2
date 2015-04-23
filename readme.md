@@ -13,12 +13,15 @@
 
 #### Ressources
 - www.ess.ovgu.de/Lehre/Technische+Informatik+II.html
-	- general and tasks
+	- general stuff and tasks
+	- slides
 - ti2.areon-de.de/
 	- notes by Fin, Martin and me
+	- not always up-to-date
+	- most detailed
 - gitlab.development.coffee/snippets/
 	- patchfile for practical task2
-	- my notes from lesson 1
+	- my notes, slightly different to our combined notes at ti2.areon-dev.de
 
 #### Deadlines
 - theoretical tasks

@@ -1,0 +1,3 @@
+[submodule "ue3_ausfall/aufg2-solve"]
+	path = ue3_ausfall/aufg2-solve
+	url = https://github.com/xaedes/oostubs.git

@@ -1,6 +1,6 @@
 [submodule "ue3_ausfall/aufg2-solve"]
 	path = ue3_ausfall/aufg2-solve
-	url = https://github.com/xaedes/oostubs.git
+	url = ssh://git@github.com/xaedes/oostubs.git
 [submodule "ue1/aufg1-solve"]
 	path = ue1/aufg1-solve
 	url = ssh://git@github.com/xaedes/oostubs.git

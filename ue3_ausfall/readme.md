@@ -1,4 +1,4 @@
-# Technische Informatik 2 - Einführungsübung
+# Technische Informatik 2 - Übung 3
 
 ## Programm für heute:
 
@@ -37,6 +37,8 @@ Grundlegend:
 			* immer PIC1, wenn Interrupt von PIC2 auch an PIC2
 		* allow: zugehöriges Bit in Maske löschen
 			* `mask &= 0xff ^ (1 << BITNUM);`
+			* `mask &=~ (1 << BITNUM); //löschen`
+			* `mask |= (1 << BITNUM); //setzen`
 			* **an PIC2-Leitung denken**
 		* forbid
 			* Bit in maske setzen
@@ -87,6 +89,11 @@ enum Interrupts{
 
 ```sh
 make all
+```
+### OOStuBs Doku bauen
+
+```sh
+make doc
 ```
 
 ### OOStuBs ausführen in QEMU

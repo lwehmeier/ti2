@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <h1>
+<a id="user-content-technische-informatik-2---Übung-3" class="anchor" href="#technische-informatik-2---%C3%9Cbung-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>Technische Informatik 2 - Übung 3</h1>
+
+<h2>
+<a id="user-content-programm-für-heute" class="anchor" href="#programm-f%C3%BCr-heute" aria-hidden="true"><span class="octicon octicon-link"></span></a>Programm für heute:</h2>
+
+<ul>
+<li>kurzes Vorstellen Aufgabe 2, mehr in 2 Wochen</li>
+<li>Hilfe zu Aufgabe 1</li>
+</ul>
+
+<h2>
+<a id="user-content-orga" class="anchor" href="#orga" aria-hidden="true"><span class="octicon octicon-link"></span></a>Orga</h2>
+
+<ul>
+<li>theoretische Aufgabe 1 kommt am 27.05</li>
+<li>praktiche Aufgabe 2 zum 15.05</li>
+</ul>
+
+<h2>
+<a id="user-content-kurze-einführung-in-task2" class="anchor" href="#kurze-einf%C3%BChrung-in-task2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Kurze Einführung in Task2</h2>
+
+<ul>
+<li>Interrupts
+
+<ul>
+<li>PIC</li>
+<li>Keyboard</li>
+<li>unterbrechen von Task2</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="user-content-hilfestellung-zu-aufgabe-2" class="anchor" href="#hilfestellung-zu-aufgabe-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hilfestellung zu Aufgabe 2</h2>
+
+<p>Informationen zu finden sich in der Dokumentation unter <code>doc/html/task2.html</code>
+Grundlegend:</p>
+
+<ul>
+<li><strong>CPU</strong></li>
+<li>
+<strong>PIC</strong>
+
+<ul>
+<li>programmable interrupt controller</li>
+<li>ursprünglich ein PIC mit 8 Interrupts</li>
+<li>dann 2 PICs als Chain, also 15 Interrupts</li>
+<li>Master/Slave
+
+<ul>
+<li>Slave an Kanal 2</li>
+</ul>
+</li>
+<li>IO Ports an <strong>20/21</strong> und <strong>A0/A1</strong>
+</li>
+<li>Maskieren
+
+<ul>
+<li>PIC hat 8-Bit Mask Register um Interrupts zu maskieren</li>
+<li>Port 21/A1</li>
+</ul>
+</li>
+<li>funktionen
+
+<ul>
+<li>ack: Interrupt bestätigen
+
+<ul>
+<li>immer PIC1, wenn Interrupt von PIC2 auch an PIC2</li>
+</ul>
+</li>
+<li>allow: zugehöriges Bit in Maske löschen
+
+<ul>
+<li><code>mask &amp;= 0xff ^ (1 &lt;&lt; BITNUM);</code></li>
+<li><code>mask &amp;=~ (1 &lt;&lt; BITNUM); //löschen</code></li>
+<li><code>mask |= (1 &lt;&lt; BITNUM); //setzen</code></li>
+<li><strong>an PIC2-Leitung denken</strong></li>
+</ul>
+</li>
+<li>forbid
+
+<ul>
+<li>Bit in maske setzen</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>doc/html/task2_pic.html</code></li>
+<li><code>wiki.osdev.org/8259_PIC</code></li>
+<li><code>lowlevel.eu/wiki/Programmable_Interrupt_Controller</code></li>
+</ul>
+</li>
+</ul>
+
+<div class="highlight highlight-c"><pre><span class="pl-k">enum</span> Interrupts{
+          timer         = <span class="pl-c1">32</span>,  
+          keyboard      = <span class="pl-c1">33</span>,  
+          pic2          = <span class="pl-c1">34</span>,  
+          serial2       = <span class="pl-c1">35</span>,  
+          serial1       = <span class="pl-c1">36</span>,  
+          soundcard     = <span class="pl-c1">37</span>,  
+          floppy        = <span class="pl-c1">38</span>,  
+          parallelport  = <span class="pl-c1">39</span>,  
+          rtc           = <span class="pl-c1">40</span>,  
+          misc          = <span class="pl-c1">41</span>,  
+          ata4          = <span class="pl-c1">42</span>, 
+          ata3          = <span class="pl-c1">43</span>, 
+          secondps2     = <span class="pl-c1">44</span>, 
+          fpu           = <span class="pl-c1">45</span>, 
+          ata1          = <span class="pl-c1">46</span>, 
+          ata2          = <span class="pl-c1">47</span>  
+        };</pre></div>
+
+<ul>
+<li><strong>InterruptStorage</strong></li>
+<li><strong>InterruptManager</strong></li>
+<li><strong>InterruptHandler</strong></li>
+<li>
+<strong>Panic</strong>
+
+<ul>
+<li>Pointer auf Interrupthandler für jeden möglichen Interrupt in IStorage</li>
+<li>Initial alle handler auf Panic</li>
+</ul>
+</li>
+<li>
+<strong>Keyboard</strong>
+
+<ul>
+<li>Tastaturinterrupt behandeln</li>
+<li>"Tastaturtreiber"</li>
+<li>Reboot mit Ctrl-Alt-Q</li>
+</ul>
+</li>
+<li>
+<strong>Artefakte</strong>
+
+<ul>
+<li>Wenn alles funktioniert werdet ihr einen durchlaufenden Balken sehen</li>
+<li>Bei Tastendrücken werden die Zeichen unten angezeigt</li>
+<li>Es werden Artefakte auftreten
+
+<ul>
+<li>Diese sind keine Fehler sondern Teil der Aufgabe</li>
+<li>Woher kommen sie?</li>
+<li>Was kann man dagegen unternehmen?</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+<h3>
+<a id="user-content-oostubs-bauen" class="anchor" href="#oostubs-bauen" aria-hidden="true"><span class="octicon octicon-link"></span></a>OOStuBs bauen</h3>
+
+<div class="highlight highlight-sh"><pre>make all</pre></div>
+
+<h3>
+<a id="user-content-oostubs-doku-bauen" class="anchor" href="#oostubs-doku-bauen" aria-hidden="true"><span class="octicon octicon-link"></span></a>OOStuBs Doku bauen</h3>
+
+<div class="highlight highlight-sh"><pre>make doc</pre></div>
+
+<h3>
+<a id="user-content-oostubs-ausführen-in-qemu" class="anchor" href="#oostubs-ausf%C3%BChren-in-qemu" aria-hidden="true"><span class="octicon octicon-link"></span></a>OOStuBs ausführen in QEMU</h3>
+
+<div class="highlight highlight-sh"><pre>make run</pre></div>
+
+</body>
+</html>

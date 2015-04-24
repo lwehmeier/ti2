@@ -15,7 +15,7 @@
 	- most detailed
 - gitlab.development.coffee/snippets/
 	- patchfile for practical task2
-	- my notes, slightly different to our combined notes at ti2.areon-dev.de
+	- my notes, slightly different from our combined notes at ti2.areon-dev.de
 
 #### Deadlines
 - theoretical tasks

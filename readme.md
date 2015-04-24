@@ -17,16 +17,27 @@
 	- patchfile for practical task2
 	- my notes, slightly different from our combined notes at ti2.areon-dev.de
 
-#### Deadlines
-- theoretical tasks
-	- 1
-		- issued 27.04 
-		- discussion **08.05**
 
-- practical tasks
-	- 1
-		- issued: 17.04
-		- deadline: **08.05**
-	- 2
-		- issued: 08.05
-		- deadline: (probably) **15.05**, subject to change
+## Deadlines
+
+* theoretical tasks
+	* 1
+		* issued: KW17
+		* discussion: KW18
+
+* practical tasks
+	* 1
+		* date of issue: KW15 (class 1)
+		* deadline: KW17
+	* 2
+		* date of issue: KW17 (class 3)
+		* deadline: KW19
+	* 3
+		* date of issue: KW19 (class 5)
+		* deadline: KW21
+	* 4
+		* date of issue: KW21 (class 7)
+		* deadline: KW23
+	* 5
+		* date of issue: KW23 (class 9)
+		* deadline: KW25

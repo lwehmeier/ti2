@@ -23,6 +23,7 @@ Grundlegend:
 
 * **CPU**
 * **PIC**
+	* **PIC M/S-System und CPU-Anbindung anzeichnen**
 	* programmable interrupt controller
 	* ursprünglich ein PIC mit 8 Interrupts
 	* dann 2 PICs als Chain, also 15 Interrupts

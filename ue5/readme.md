@@ -84,6 +84,12 @@ Grundlegend:
 |18			| SIMD Floating-Point Exception | Fault 	| ×				|
 |20			| Virtualization Exception 		| Fault 	| x 			|
 
+### Ressources
+[osdev exceptions](http://wiki.osdev.org/Exceptions)
+[lowlevel exceptions](http://www.lowlevel.eu/wiki/Exception)
+[lowlevel asm](http://www.lowlevel.eu/wiki/Teil_2_-_Assembler_101)
+[Intel manuals](http://www.intel.com/content/www/us/en/processors/architectures-software-developer-manuals.html)
+
 
 ### OOStuBs bauen
 

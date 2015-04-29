@@ -8,7 +8,7 @@
 ## Orga
 
 * theoretische Aufgabe 2 kommt am 11.05
-* praktische Aufgabe 3 zu KW27
+* praktische Aufgabe 3 zu KW22
 
 ## Kurze Einführung in Task3
 

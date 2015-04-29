@@ -22,22 +22,25 @@
 
 * theoretical tasks
 	* 1
-		* issued: KW17
-		* discussion: KW18
+		* issued: KW18
+		* discussion: KW19
+	* 2
+		* date of issue: KW20 (?)
+		* discussion: KW21
 
 * practical tasks
 	* 1
 		* date of issue: KW15 (class 1)
-		* deadline: KW17
+		* deadline: KW18
 	* 2
-		* date of issue: KW17 (class 3)
-		* deadline: KW19
+		* date of issue: KW18 (class 3)
+		* deadline: KW20
 	* 3
-		* date of issue: KW19 (class 5)
-		* deadline: KW21
+		* date of issue: KW20 (class 5)
+		* deadline: KW22
 	* 4
-		* date of issue: KW21 (class 7)
-		* deadline: KW23
+		* date of issue: KW22 (class 7)
+		* deadline: KW24
 	* 5
-		* date of issue: KW23 (class 9)
-		* deadline: KW25
+		* date of issue: KW24 (class 9)
+		* deadline: KW26

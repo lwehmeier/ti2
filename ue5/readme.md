@@ -12,17 +12,17 @@
 
 ## Kurze Einführung in Task3
 
-- Debugging
+* Debugging
 	- **gdb** statt Eclipseintegration
 	- `make debug`
-- Stackanalyse
+* Stackanalyse
 	- Stackframe
-- **Teil A**
+* **Teil A**
 	- Wo tritt der "Fehler" auf?
 	- Was für ein Fehler trat auf?
 	- Vorgehen
 	- Demonstration mit gdb
-- **Teil B**
+* **Teil B**
 	- Fibonacci Berechnung
 	- printStack() an relevanten Punkten
 	- Erklären (jedes) Stackdumps
@@ -33,12 +33,12 @@
 
 Informationen zu finden sich in der Dokumentation unter `doc/html/task3.html`
 Grundlegend:
-- Exceptions
+* Exceptions
 	- Double/Triple Fauult
 	- Invalid Opcode
 	- Stackframe
 	- `error code | X | eip | cs | eflags`
-- wichtige Register
+* wichtige Register
 	- ebp - (Extended) base pointer
 	- esp - (Extended) stack pointer
 	- eip - (Extended) instruction pointer
@@ -47,12 +47,12 @@ Grundlegend:
 			- ax (short)
 			- ah (byte, high)
 			- al (byte, low)
-- Segmente
+* Segmente
 	- cs - Codesegment
 	- ds - Datensegment
 	- ss - Stacksegment
 	- weitere general purpose
-- BSP function call
+* BSP function call
 ```asm
 	push %eax     ; zweiter Parameter fuer f1
     push %ebx     ; erster Parameter  fuer f1

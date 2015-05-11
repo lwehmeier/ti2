@@ -28,6 +28,13 @@
 	- Erklären (jedes) Stackdumps
 	- Parameterübergabe
 	- Arrayaufbau 
+* **Teil C**
+	- Ausgabe einer Zahl
+	- system wird "übernommen"
+	- Erklären was passiert und wie
+	- durchsteppen mit gdb
+	- Fix vorschlagen
+	- Erläutern Sicherheitsaspekt
 
 ## Hilfestellung zu Aufgabe 2
 

@@ -15,7 +15,7 @@
 	url = ssh://git@github.com/xaedes/oostubs.git
 [submodule "ue5/aufg3-solve"]
 	path = ue5/aufg3-solve
-	url = ssh://git@github.com/xaedes/oostubs.git
+	url = ssh://git@git.development.coffee:1023/lwehmeier/ti2-a3-mod.git
 [submodule "ue9/aufg5-solve"]
 	path = ue9/aufg5-solve
 	url = ssh://git@github.com/xaedes/oostubs.git

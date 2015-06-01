@@ -1,4 +1,4 @@
-# Technische Informatik 2 - Übung 3
+# Technische Informatik 2 - Übung 5
 
 ## Programm für heute:
 
@@ -36,7 +36,7 @@
 	- Fix vorschlagen
 	- Erläutern Sicherheitsaspekt
 
-## Hilfestellung zu Aufgabe 2
+## Hilfestellung zu Aufgabe 3
 
 Informationen zu finden sich in der Dokumentation unter `doc/html/task3.html`
 Grundlegend:

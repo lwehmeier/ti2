@@ -1,21 +1,21 @@
 [submodule "ue3_ausfall/aufg2-solve"]
 	path = ue3_ausfall/aufg2-solve
-	url = ssh://git@github.com/xaedes/oostubs.git
+	url = ssh://git@github.com/ovgu-ti2/oostubs.git
 [submodule "ue1/aufg1-solve"]
 	path = ue1/aufg1-solve
-	url = ssh://git@github.com/xaedes/oostubs.git
+	url = ssh://git@github.com/ovgu-ti2/oostubs.git
 [submodule "ue5_ausfall/aufg3-solve"]
 	path = ue5_ausfall/aufg3-solve
-	url = ssh://git@github.com/xaedes/oostubs.git
+	url = ssh://git@github.com/ovgu-ti2/oostubs.git
 [submodule "ue7/aufg4-solve"]
 	path = ue7/aufg4-solve
-	url = ssh://git@github.com/xaedes/oostubs.git
+	url = ssh://git@github.com/ovgu-ti2/oostubs.git
 [submodule "ue9_ausfall/aufg5-solve"]
 	path = ue9_ausfall/aufg5-solve
-	url = ssh://git@github.com/xaedes/oostubs.git
+	url = ssh://git@github.com/ovgu-ti2/oostubs.git
 [submodule "ue5/aufg3-solve"]
 	path = ue5/aufg3-solve
-	url = ssh://git@git.development.coffee:1023/lwehmeier/ti2-a3-mod.git
+	url = ssh://git@github.com/ovgu-ti2/oostubs.git
 [submodule "ue9/aufg5-solve"]
 	path = ue9/aufg5-solve
-	url = ssh://git@github.com/xaedes/oostubs.git
+	url = ssh://git@github.com/ovgu-ti2/oostubs.git

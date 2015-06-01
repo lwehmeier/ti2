@@ -15,6 +15,10 @@
 * Scheduling
 	* kooperativ
 	* preemptiv
+* 3 Tasks
+	* Counter 1: zählt hoch
+	* Counter 2: zählt hoch
+	* rotCursor: malt bekannten rotierenden Balken, hier KEINE Artefakte
 
 * **Teil A**
 	* Kooperatives Multitasking implementieren
